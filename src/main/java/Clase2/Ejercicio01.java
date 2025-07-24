@@ -4,7 +4,10 @@ import RecursosReutilizables.Consola;
 
 public class Ejercicio01 {
     public static void main(String[] args) {
-        int num = Consola.leerEntero("Ingresá un numero: ");
+        int num;
+        do {
+            num = Consola.leerEntero("Ingresá un número positivo: ");
+        } while (num <= 0);
         int a = 1;
         int b = 1;
 
